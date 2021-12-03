@@ -5,6 +5,16 @@ local term_opts = { silent = true }
 -- Shorten function name
 local keymap = vim.api.nvim_set_keymap
 
+-- Some shotcut key
+-- S -> Shift
+-- M -> Alt
+-- C -> Control
+-- n -> nomal mode
+-- v -> visual mode
+-- i -> insert mode
+
+keymap("n", "<M-f>", ":NvimTreeToggle<CR>", opts)
+
 -- Window navigation
 keymap("n", "<C-h>", "<C-w>h", opts)
 keymap("n", "<C-j>", "<C-w>j", opts)

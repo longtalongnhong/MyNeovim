@@ -41,6 +41,13 @@ return packer.startup(function(use)
   --- PLUGINS HERE ---
   use "nvim-lua/popup.nvim"     -- An implement of the Popup PAI firm vim in neovim
   use "nvim-lua/plenary.nvim"   -- Useful lua functions used lots of plugins
+  use {
+    'kyazdani42/nvim-tree.lua',
+    requires = {
+      'kyazdani42/nvim-web-devicons', -- optional, for file icon
+    },
+    config = function() require'nvim-tree'.setup {} end
+	}															-- Files management
 
   -- Automatically set up your configuration after cloning packer.nvim
   if  PACKER_BOOTSTRAP then

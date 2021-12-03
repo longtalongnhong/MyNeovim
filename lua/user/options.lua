@@ -1,7 +1,7 @@
 local options = {
 	backup		= false,			-- Don't create a backup file
 	clipboard	= "unnamedplus", 		-- Allow neovim access the system clipboard
-	cmdheight	= 2,				-- More space in the neovim command line
+	cmdheight	= 1,				-- More space in the neovim command line
 	completeopt	= { "menuone", "noselect" }, 	-- 'For' cmp
 	conceallevel	= 0,				-- So that the '' is visible in markdown file
 	fileencoding	= "UTF-8",			-- The encoding written to a file
